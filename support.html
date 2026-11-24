@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mystica support</title><meta name="description" content="Mystica, a candle-lit iPhone app for reflection and entertainment.">
+<link rel="icon" href="assets/icon.png"><style>:root{--ink:#0f0c1f;--dusk:#1d1745;--gilt:#d6b573;--ember:#e0752f;--cream:#f4e8d0;--ash:#b9ae9a}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:linear-gradient(#241b52 0,#151030 38%,#140d0b 100%) fixed;color:var(--cream);font:17px/1.65 "New York",Georgia,"Songti SC","Noto Serif CJK SC",serif}
+a{color:var(--gilt)}header,main,footer{max-width:760px;margin:0 auto;padding:0 22px}
+header{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center;justify-content:space-between;padding-top:22px}
+nav a{margin-right:18px;text-decoration:none;font-size:15px;letter-spacing:.04em}nav a.on{border-bottom:1px solid var(--gilt)}
+.lang a{margin-left:12px;font-size:14px;color:var(--ash)}.lang a.on{color:var(--cream)}
+h1{font-size:2.3rem;line-height:1.15;margin:.2em 0 .3em;letter-spacing:.02em}h2{font-size:1.2rem;color:var(--gilt);letter-spacing:.14em;text-transform:uppercase;margin:2.2em 0 .6em;border-bottom:1px solid #d6b57340;padding-bottom:.3em}h3{font-size:1.05rem;margin:1.6em 0 .3em}
+.hero{text-align:center;padding:34px 0 8px}.hero img{width:112px;height:112px;border-radius:25px;box-shadow:0 10px 40px #e0752f55}.hero p{color:var(--ash);max-width:34em;margin:.4em auto}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;padding:0;list-style:none}
+.steps li,.card{background:#ffffff0d;border:1px solid #d6b5732e;border-radius:16px;padding:16px 18px}.steps b{display:block;color:var(--gilt);margin-bottom:.2em}
+.glimmer{border-left:2px solid var(--gilt);padding:.4em 1em;font-style:italic;background:#e0752f12;border-radius:0 12px 12px 0}
+.oracles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;padding:0;list-style:none}.oracles li{background:#ffffff0a;border:1px solid #d6b5732a;border-radius:14px;padding:12px 15px}.oracles b{color:var(--cream)}.oracles span{display:block;color:var(--ash);font-size:.92rem}
+.note{color:var(--ash);font-size:.95rem}code{background:#ffffff14;padding:.1em .35em;border-radius:5px}hr{border:0;border-top:1px solid #d6b57333;margin:2em 0}
+footer{color:var(--ash);font-size:14px;padding:30px 22px 60px;text-align:center}</style></head><body>
+<header><nav><a href="index.html" class="">Guide</a><a href="privacy.html" class="">Privacy</a><a href="support.html" class="on">Support</a></nav><div class="lang"><a href="support.html" class="on">English</a></div></header><main><h2>What is Mystica?</h2>
+<p>Mystica is an iPhone app for reflection and entertainment. It offers eleven traditional methods of divination: Tarot, I Ching, Western astrology, numerology, Plum Blossom (Meihua), Da Liu Ren, Qimen Dunjia, Runes, Geomancy, Lenormand and Palmistry. The draw or calculation is done for real by the app, and an AI then narrates the signs that were already drawn. Readings are stories told from symbols. They are not predictions and are not medical, legal, financial or psychological advice.</p>
+<p>Mystica has no accounts, no ads, no analytics, no tracking and no in-app purchases. It is for iPhone and is available in English, Simplified Chinese and Traditional Chinese.</p>
+<h2>Frequently asked questions</h2>
+<h3>Why is there no narration on my phone? I only see the drawn signs.</h3>
+<p>AI narration uses Apple's on-device model, which needs <strong>iOS 26 or later on an iPhone that supports Apple Intelligence, with Apple Intelligence turned on</strong>, and with its model already downloaded. Without it, Mystica still gives you the real draw, the drawn signs with their traditional meanings, and offline Lantern hints. You can also use your own cloud key for narration (see below), which works on older iOS versions too.</p>
+<h3>How do I turn on Apple Intelligence?</h3>
+<p>Open iOS Settings &gt; Apple Intelligence &amp; Siri and turn on Apple Intelligence. Apple may need a few minutes (and Wi-Fi) to download the model. Availability depends on your device, your region and your language settings, which Apple controls; see Apple's page for the current list of supported devices and regions. If the Sanctum tab in Mystica says the narrator is unavailable, that is the reason.</p>
+<h3>How does cloud narration work? What does it cost?</h3>
+<p>It is optional and off by default. In Sanctum, choose Claude (Anthropic) or OpenAI, switch on "Send readings to the cloud", and paste your own API key (you create one on the provider's website; the app has links). Mystica then sends your question and the drawn signs straight from your phone to that provider. We run no server in between. The provider bills your own account for what you use, normally a small amount per reading; see their pricing. The "Test key" button sends one tiny request that uses a few tokens of your quota. Mystica never receives your key: it stays in your iPhone's Keychain, and you can remove it any time in Sanctum.</p>
+<h3>Palmistry says it needs cloud vision. Why?</h3>
+<p>Reading a palm photo needs a model that can look at images. Apple's on-device model in Mystica does not do this, so Palmistry works only with a cloud provider (Claude or OpenAI) that you have set up and opted into. The photo is sent only for that reading. Without a cloud provider, the other ten oracles work normally.</p>
+<h3>How do I delete my data?</h3>
+<ul><li>Readings: Journal screen &gt; delete all, or swipe a single reading to delete it.</li><li>API keys: Sanctum &gt; Remove key.</li><li>Everything: delete the app from your phone. Mystica keeps no copy anywhere else because it has no servers.</li></ul>
+<p>If you used a cloud provider, requests you sent are subject to that provider's own retention rules.</p>
+<h3>Voice input is not available for my language. Why?</h3>
+<p>Mystica only uses speech recognition that runs entirely on your phone, and never a server. Apple supports on-device recognition for a limited set of languages, and it may need to be downloaded first (iOS Settings &gt; General &gt; Keyboard &gt; Dictation, and the language's keyboard added). If your phone cannot recognise the language on-device, the microphone button appears unavailable. You can always type your question.</p>
+<h3>How do I change the language?</h3>
+<p>Sanctum &gt; Language, or on the welcome screen. The choices are English, Simplified Chinese and Traditional Chinese. This changes the app and the language of the narration.</p>
+<h3>Are the readings accurate? Can they tell me what will happen?</h3>
+<p>No. Mystica is for reflection and entertainment. Please make important decisions carefully, with people you trust and, where appropriate, qualified professionals.</p>
+<h3>Which devices are supported?</h3>
+<p>iPhone only. There is no iPad, Apple Watch or widget version, and no iCloud sync: your journal lives on the phone it was made on.</p>
+<h2>Contact</h2>
+<p>Email: albert_lqchen@hotmail.com Please include your iPhone model, iOS version and what you saw. Never send us an API key.</p></main>
+<footer>Mystica · Liqun Chen · albert_lqchen@hotmail.com</footer></body></html>
