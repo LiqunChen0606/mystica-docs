@@ -35,7 +35,7 @@ processed on the phone and nothing is transmitted.
 ## What is sent, where, and when
 
 1. **Optional cloud narration (off by default).** Only if you choose Claude (Anthropic) or OpenAI in the app,
-   switch on "Send readings to the cloud", and enter your own API key, the app sends a request directly from
+   agree on the "Before cloud narration" screen, and enter your own API key, the app sends a request directly from
    your phone to that company's servers over HTTPS. The request contains: your question; the drawn signs and
    their meanings (for methods based on your birth details, this includes results computed from them, for
    example chart placements or numerology numbers, but never your name, birth date, birth time or birthplace
@@ -68,7 +68,7 @@ share them in iOS settings. This is Apple's system, not something the app collec
 
 - **Delete your journal:** Journal screen > delete all (or remove single readings).
 - **Remove a key:** Sanctum > the key section > Remove. This deletes it from the Keychain.
-- **Turn cloud off:** switch off "Send readings to the cloud" in Sanctum, and narration returns to the
+- **Turn cloud off:** switch off "Cloud narration allowed" in Sanctum, and narration returns to the
   on-device model.
 - **Erase everything:** Sanctum > "Erase all my data" removes your birth profile, both saved API keys, your
   cloud settings and your whole journal from the phone in one step. You can also change the saved birth
